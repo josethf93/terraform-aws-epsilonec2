@@ -3,8 +3,7 @@ resource "aws_instance" "joseth_ec2" {
   ami           = var.amiid
   instance_type = "t2.micro"
   tags = {
-    "Name" = "Joseth ${var.tags[count.index]}"
-    
+    "Name" = "EPCC ${var.tags[count.index]} ${var.env}"    
   }
 }
 
