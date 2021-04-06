@@ -1,3 +1,7 @@
+variable "env" {
+    description = "Environment"
+}
+
 variable "amiid" {
   description = "AMI ID of the instance"
   default     = "ami-0742b4e673072066f"
